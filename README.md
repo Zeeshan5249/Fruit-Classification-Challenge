@@ -1,77 +1,81 @@
-## **Fruit Classification Challenge**
+# Fruit Classification Challenge
 
-This project is a deep learning-based solution to classify various fruits from images, aiming for high accuracy and efficiency. Using state-of-the-art architectures and techniques, the model achieves robust performance suitable for real-world applications.
+## Introduction
+This project explores the development of an efficient deep learning model for classifying fruits into different categories. Leveraging state-of-the-art neural network architectures, including MobileNetV3, the project achieved a highly accurate and computationally efficient fruit classification pipeline. The model is optimized for real-world applications such as agriculture, food processing, and retail.
 
-### **Table of Contents**
+---
 
-1\. Introduction
-2\. Features
-3\. Prerequisites
-4\. Installation
-5\. Usage
-6\. Results
-7\. Demo
-8\. Authors
-9\. License
+## Features
+- **High Accuracy**: Achieved 99.59% test accuracy using MobileNetV3.
+- **Lightweight Architecture**: Optimized for fast inference and resource-constrained environments.
+- **Data Augmentation**: Utilized techniques like random rotations, color jittering, and horizontal flips to improve model robustness.
+- **Transfer Learning**: Pre-trained models on ImageNet for efficient feature extraction.
+- **Real-World Applicability**: Suitable for tasks like automated sorting and fruit recognition in stores.
 
-### **1. Introduction**
+---
 
-This project leverages deep learning to classify fruits efficiently and accurately. It is designed for applications like automated sorting in agriculture, quality control in food processing, and helping users recognize fruits in retail settings. The final model uses MobileNetV3 for its lightweight and highly accurate architecture.
+## Results
+The best-performing model, **MobileNetV3**, achieved:
+- **Test Accuracy**: 99.59%
+- **Average Inference Time**: 0.0068 seconds per image
 
-### **2. Features**
+Other tested architectures include Vision Transformer (ViT), ResNet50, EfficientNet, and DenseNet, each evaluated for accuracy and computational efficiency.
 
-\- Fruit classification across 22 categories.
-\- Uses MobileNetV3 for real-time and accurate predictions.
-\- Incorporates data augmentation for model robustness.
-\- Lightweight and suitable for deployment on resource-constrained systems.
+---
 
-### **3. Prerequisites**
+## Demo
+A video demonstration of the project is available in the `Demo` folder:
+- **Path**: Demo/Demo Presentation.mp4
 
-\- Python 3.8 or above
-\- PyTorch
-\- NVIDIA GPU (optional but recommended for training)
-\- Jupyter Notebook (optional)
+---
 
-### **4. Installation**
+## Documentation
+The full project report, detailing the methodology, experiments, and results, can be found in the `Documentation` folder:
+- **Path**: Documentation/Final Report.pdf
 
-1\. Clone the repository:
-`   ````bash
-`   `git clone https://github.com/yourusername/fruit-classification-challenge.git
-`   ````
-2\. Install dependencies:
-`   ````bash
-`   `pip install -r requirements.txt
-`   ````
+---
 
-### **5. Usage**
+## Contribution
+The project was collaboratively developed by **Group 14**:
+- **Zeeshan Ansari (510370813)**
+- **Syed Hamza Kaliyadan (500585454)**
 
-1\. Train the model:
-`   ````bash
-`   `python project2\_train.py
-`   ````
-2\. Test the model:
-`   ````bash
-`   `python project2\_test.py
-`   ````
-3\. View the demo video in the Demo folder.
+Each member contributed equally to model development, experimentation, and report preparation.
 
-### **6. Results**
+---
 
-The model achieved:
-\- Validation Accuracy: 95%
-\- Test Accuracy: 99.59%
-\- Inference Time: 0.0068 seconds per image (MobileNetV3).
+## Prerequisites
+To run this project, you need:
+1. **Python 3.8+**
+2. **Required Libraries**:
+   - PyTorch
+   - Torchvision
+   - NumPy
+   - Matplotlib
+   - Scikit-learn
+3. **Hardware**:
+   - A CUDA-enabled GPU for faster training (optional but recommended)
 
-### **7. Demo**
+Install the dependencies using:
+```bash 
+python -m pip install -r requirements.txt
+```
 
-A demo video showcasing the project's functionality can be found in the `Demo` folder: `Demo Presentation.mp4`.
+---
 
-### **8. Authors**
+## Usage
+### Training
+To train the model, run the following script:
+```python 
+[python project2_train.py]
+```
 
-Group 14:
-\- Zeeshan Ansari (510370813)
-\- Syed Hamza Kaliyadan (500585454)
+### Testing
+To evaluate the model's performance:
+```python 
+[python project2_test.py]
+```
 
-### **9. License**
+Ensure that the trained model weights (project2.pth) are in the same directory as the scripts.
 
-This project is licensed under the MIT License.
+---
