@@ -1,4 +1,4 @@
-# Fruit Classification Challenge
+# Fruit Classification Challenge  🍎
 
 ## Introduction
 This project explores the development of an efficient deep learning model for classifying fruits into different categories. Leveraging state-of-the-art neural network architectures, including MobileNetV3, the project achieved a highly accurate and computationally efficient fruit classification pipeline. The model is optimized for real-world applications such as agriculture, food processing, and retail.
